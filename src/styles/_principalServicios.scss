@@ -1,0 +1,87 @@
+.principal__servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorFondoPrincipal;
+    padding-bottom: 1rem;
+
+    .servicios__apartado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 1rem;
+        align-items: start;
+        background-color: $colorFondoSeccion;
+        margin: 1rem 1rem 0 1rem;
+        border-radius: 2px;
+        border-left: 2px solid $bordeIzquierdoOSuperior;
+        border-right: 2px solid $bordeDerechoOInferior;
+        border-top: 2px solid $bordeIzquierdoOSuperior;
+        border-bottom: 2px solid $bordeDerechoOInferior;
+
+        .apartado__titulo {
+            margin: 0 32px 0 0;
+            padding: 1rem;
+            width: 20%;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .apartado__bloqueDescriptivo {
+            display: flex;
+            flex-direction: column;
+            border-radius: 2px;
+            border-left: 2px solid $bordeIzquierdoOSuperior;
+            border-right: 2px solid $bordeDerechoOInferior;
+            border-top: 2px solid $bordeIzquierdoOSuperior;
+            border-bottom: 2px solid $bordeDerechoOInferior;
+            width: 80%;
+
+            &:hover {
+                border-color: $titulos;
+                transition: 2s;
+            }
+
+            .bloqueDescriptivo__descripcion {
+                padding: 0 1.8rem;
+                margin: 1rem 0 0 0;
+                color: $blanco;
+                font-family: $textoEnElPrincipal;
+                font-size: 12px;
+            }
+
+            .bloqueDescriptivo__listadoCabecera {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 1rem 1rem;
+                margin: 0;
+                justify-content: center;
+
+                .bloqueDescriptivo__itemCabecera {
+                    width: 100%;
+                    display: flex;
+                    padding: 0.8rem;
+                    border-radius: 2px;
+                    border-left: 2px solid $bordeIzquierdoOSuperior;
+                    border-right: 2px solid $bordeDerechoOInferior;
+                    border-top: 2px solid $bordeIzquierdoOSuperior;
+                    border-bottom: 2px solid $bordeDerechoOInferior;
+                    margin: 2px;
+                    align-items: center;
+                    font-size: 14px;
+
+                    .itemCabecera__titulo {
+                        font-weight: bold;
+                        color: $negro;
+                        width: 15%;
+                        margin-right: 30px;
+                    }
+
+                    .itemCabecera__parrafo {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@keyframes borderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    50% {
+        border-color: yellow;
+    }
+
+    100% {
+        border-color: $titulos;
+    }
+}

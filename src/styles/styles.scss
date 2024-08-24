@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Monkey Island SCUMM';
+    src: url('/assets/ONESIZE_.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chicago';
+    src: url('/assets/ChicagoFLF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@import "_variables";
+@import "_mixins";
+@import "_generales";
+@import "_keyframes";
+
+@import "_cabecera";
+@import "_cabecera__mediaQuery";
+@import "_principalPerfil";
+@import "_principalPerfil__mediaQuery";
+@import "_principalProyectos";
+@import "_principalProyectos__mediaQuery";
+@import "_principalHabilidades";
+@import "_principalHabilidades__mediaQuery";
+@import "_principalServicios";
+@import "_principalServicios__mediaQuery";
+@import "_pieDePagina";

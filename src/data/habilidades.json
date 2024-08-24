@@ -1,0 +1,133 @@
+{
+    "formacion": [
+        {
+            "tipo": "Carrera Desarrollador Full Stack",
+            "institucion": "Plataforma de educación digital Coderhouse",
+            "ubicacion": "Argentina",
+            "logo": "/media/img/coderHouse.png",
+            "bandera": "/media/img/argentina.png",
+            "periodo": "2023-Presente",
+            "temas": {
+                "Curso de Desarrollo Web": [
+                    {
+                        "nombre": "HTML",
+                        "imagen": "/media/img/html.png"
+                    },
+                    {
+                        "nombre": "CSS",
+                        "imagen": "/media/img/css.png"
+                    },
+                    {
+                        "nombre": "SASS",
+                        "imagen": "/media/img/sass.png"
+                    },
+                    {
+                        "nombre": "Bootstrap",
+                        "imagen": "/media/img/bootstrap.png"
+                    },
+                    {
+                        "nombre": "Git",
+                        "imagen": "/media/img/git.png"
+                    },
+                    {
+                        "nombre": "GitHub",
+                        "imagen": "/media/img/github.png"
+                    },
+                    {
+                        "nombre": "SEO",
+                        "imagen": "/media/img/SEO.png"
+                    },
+                    {
+                        "nombre": "Hosting y Dominio",
+                        "imagen": "/media/img/hostingydominio.png"
+                    }
+                ],
+                "Curso de JavaScript": [
+                    {
+                        "nombre": "JavaScript",
+                        "imagen": "/media/img/javascript.png"
+                    },
+                    {
+                        "nombre": "Node.js",
+                        "imagen": "/media/img/nodejs.png"
+                    }
+                ],
+                "Curso de React JS": [
+                    {
+                        "nombre": "React.js",
+                        "imagen": "/media/img/reactjs.png"
+                    },
+                    {
+                        "nombre": "Firebase",
+                        "imagen": "/media/img/firebase.png"
+                    }
+                ],
+                "Curso de Programación Backend (en curso)": [
+                    {
+                        "nombre": "Express.js",
+                        "imagen": "/media/img/express.png"
+                    },
+                    {
+                        "nombre": "Handlebars.js",
+                        "imagen": "/media/img/handlebars.png"
+                    },
+                    {
+                        "nombre": "Websockets",
+                        "imagen": "/media/img/websockets.png"
+                    },
+                    {
+                        "nombre": "MongoDB",
+                        "imagen": "/media/img/mongodb.png"
+                    }
+                ]
+            }
+        },
+        {
+            "tipo": "Tecnicatura en Desarrollo de Aplicaciones Web",
+            "institucion": "Centro Integral de Formación Profesional",
+            "ubicacion": "Ponferrada, España",
+            "logo": "/media/img/cifpp.png",
+            "bandera": "/media/img/españa.png",
+            "periodo": "2012-2014",
+            "temas": [
+                "Sistemas informáticos",
+                "Bases de datos",
+                "Programación orientada a objetos",
+                "Java",
+                "Lenguajes de marcas y sistemas de gestión de información",
+                "Entornos de desarrollo",
+                "Desarrollo web en entorno cliente",
+                "Desarrollo web en entorno servidor",
+                "Despliegue de aplicaciones web",
+                "Diseño de interfaces WEB"
+            ]
+        },
+        {
+            "tipo": "Curso de Programación Java",
+            "institucion": "Universidad Nacional de Jujuy. Programa Argentina Programa 4.0",
+            "ubicacion": "Argentina",
+            "logo": "/media/img/unju.png",
+            "bandera": "/media/img/argentina.png",
+            "periodo": "2022-2023",
+            "temas": [
+                "Fundamentos de programación",
+                "Java Intermedio",
+                "Java Avanzado"
+            ]
+        }
+    ],
+    "logo": "",
+    "habilidades": [
+        {
+            "nombre": "Excel",
+            "descripcion": "Experiencia avanzada en la creación y gestión de hojas de cálculo complejas, incluyendo el uso de funciones avanzadas, tablas dinámicas, gráficos, y automatización de procesos. Capacidad para analizar y organizar grandes volúmenes de datos de manera eficiente."
+        }
+    ],
+    "idiomas": [
+        {
+            "idioma": "Inglés",
+            "nivelOral": "Avanzado",
+            "nivelEscrito": "Avanzado"
+        }
+    ]
+}
