@@ -54,17 +54,11 @@ export const Main = () => {
 
 
     return (
-        <main>
-            <div className="principal">
-                <div className="principal__cuerpo">
-                    <div className="cuerpo__logo">
-                        <img className="logo__imagen" src="./media/img/gonzaloAlvarezPorto.png" alt="gonzaloAlvarezPorto" title="gonzaloAlvarezPorto" />
-                        <p className="logo__texto">
-                            {mensaje}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </main>
+        <div className="cuerpo__logo">
+            <img className="logo__imagen" src="./media/img/gonzaloAlvarezPorto.png" alt="gonzaloAlvarezPorto" title="gonzaloAlvarezPorto" />
+            <p className="logo__texto">
+                {mensaje}
+            </p>
+        </div>
     )
 }

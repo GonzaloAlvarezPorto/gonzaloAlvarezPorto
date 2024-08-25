@@ -15,15 +15,23 @@ export const CartProvider = ({ children }) => {
     };
 
     const onMouseEnterEncabezado = () => {
-        setMensaje('Ir a');
+        setMensaje('Usar');
     }
 
     const onMouseEnterCoderHouse = () => {
         setMensaje('Abrir');
     }
 
+    const onMouseEnPagina = () => {
+        setMensaje('Ir a');
+    }
+
+    const onMouseEnFooter = () => {
+        setMensaje('Hablar con')
+    }
+
     return (
-        <CartContext.Provider value={{ mensaje, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse}}>
+        <CartContext.Provider value={{ mensaje, onMouseEnFooter, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse, onMouseEnPagina}}>
             {children}
         </CartContext.Provider>
     )

@@ -1,31 +1,23 @@
-.principal__cuerpoHabilidades {
-    background-color: $colorFondoPrincipal;
-    padding-bottom: 1rem;
+.cuerpo__formacionProfesional {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: $colorFondoPrincipal;
 
-
-    .cuerpoHabilidades__formacionProfesional {
+    .formacionProfesional__contenedor {
+        border-radius: 2px;
         border-left: 2px solid $bordeIzquierdoOSuperior;
         border-right: 2px solid $bordeDerechoOInferior;
         border-bottom: 2px solid $bordeDerechoOInferior;
         border-top: 2px solid $bordeIzquierdoOSuperior;
-        margin: 1rem;
-        border-radius: 2px;
-        border-top-left-radius: 0;
-        background-color: $colorFondoSeccion;
-        display: flex;
-        flex-direction: column;
-        background-color: $colorFondoPrincipal;
+        margin-bottom: 10px;
 
         .formacionProfesional__encabezado {
-            border-radius: 2px;
             padding: 10px 20px;
             color: $titulos;
             text-decoration: underline $sombrasLetrasOSubrayado;
             text-underline-offset: 5px;
             background-color: $colorFondoSeccion;
-
         }
 
         .formacionProfesional__cursos {
@@ -75,13 +67,13 @@
                     }
                 }
 
-                .formacionProfesional__habilidades {
+                .formacionProfesional__educacion {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     flex-wrap: wrap;
 
-                    .habilidades__temas {
+                    .educacion__temas {
                         display: flex;
                         text-decoration: none;
                         justify-content: space-between;
@@ -191,6 +183,62 @@
                         }
                     }
                 }
+            }
+        }
+
+        .formacionProfesional__habilidades {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .habilidades__item {
+                color: $blanco;
+                border-top: 0.5px solid $colorFondoPrincipal;
+                background-color: $colorFondoSeccion;
+                padding: 0 20px;
+                width: 100%;
+
+                .item__contenedor {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+
+                    .item__titulo{
+                        margin-right: 1rem;    
+                    }
+
+                    .item__logo {
+                        width: 60px;
+                        margin-right: 3rem;
+                    }
+
+                    .item__descripcion {
+                        padding: 0 20px;  
+                    }
+
+                    .contenedor__nivel {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        .contenedor__item__nivelAvanzado {
+                            background-color: $colorFondoPrincipal;
+                            width: 100px;
+                            height: 20px;
+                            border-radius: 2px;
+                            border: 2px solid $sombrasLetrasOSubrayado;
+                            margin: 0 10px;
+
+                            .item__nivelAvanzado {
+                                background-color: $titulos;
+                                width: 80%;
+                                height: 100%;
+                            }
+                        }
+                    }
+               }
             }
         }
     }

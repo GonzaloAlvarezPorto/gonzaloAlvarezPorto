@@ -54,23 +54,23 @@ export const Menu = () => {
                             GAME OVER
                         </p>
                     </button>
-                    <li className="listado__items" onMouseEnter={() => onMouseEnter('Ir a mi perfil')} onMouseLeave={onMouseEnterEncabezado}>
+                    <li className="listado__items" onMouseEnter={() => onMouseEnter('Usar perfil')} onMouseLeave={onMouseEnterEncabezado}>
                         <a href="#perfil" className="items__enlace" to="/index">
                             PERFIL
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#educacion" className="items__enlace" to="/educacion" title="educacion" onMouseEnter={() => onMouseEnter('Ir a mi educación')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#educacion" className="items__enlace" to="/educacion" title="educacion" onMouseEnter={() => onMouseEnter('Usar educación')} onMouseLeave={onMouseEnterEncabezado}>
                             EDUCACIÓN
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#servicios" className="items__enlace" to="/servicios" title="servicios" onMouseEnter={() => onMouseEnter('Ir a servicios ofrecidos')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#servicios" className="items__enlace" to="/servicios" title="servicios" onMouseEnter={() => onMouseEnter('Usar servicios ofrecidos')} onMouseLeave={onMouseEnterEncabezado}>
                             SERVICIOS
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#proyectos" className="items__enlace" to="/proyectos" title="proyectos" onMouseEnter={() => onMouseEnter('Ir a mis proyectos')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#proyectos" className="items__enlace" to="/proyectos" title="proyectos" onMouseEnter={() => onMouseEnter('Usar proyectos')} onMouseLeave={onMouseEnterEncabezado}>
                             PROYECTOS
                         </a>
                     </li>

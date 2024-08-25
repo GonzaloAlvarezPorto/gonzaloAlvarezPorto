@@ -4,13 +4,13 @@ import { CartContext } from '../../context/CartContext'
 
 export const Header = () => {
 
-    const {mensaje, onMouseEnter, onMouseLeave, onMouseEnterEncabezado } = useContext(CartContext)
+    const {mensaje, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnPagina } = useContext(CartContext)
 
     return (
         <header>
-            <div className="encabezado" onMouseEnter={onMouseEnterEncabezado} onMouseLeave={onMouseLeave}>
-                <a className='encabezado__logo' href="#home">
-                    <img className='logo__imagen' src='/media/img/minimalista.png' onMouseEnter={() => onMouseEnter('Ir al inicio')}
+            <div className="encabezado" onMouseEnter={onMouseEnterEncabezado} onMouseLeave={onMouseEnPagina}>
+                <a className='encabezado__logo' href="#main">
+                    <img className='logo__imagen' src='/media/img/minimalista.png' onMouseEnter={() => onMouseEnter('Usar inicio')}
                         onMouseLeave={onMouseEnterEncabezado}/>
                 </a>
                 <div className='encabezado__mensaje'>

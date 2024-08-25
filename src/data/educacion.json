@@ -116,11 +116,16 @@
             ]
         }
     ],
-    "logo": "",
-    "habilidades": [
+    "herramientasDeMicrosoftOffice": [
         {
-            "nombre": "Excel",
-            "descripcion": "Experiencia avanzada en la creación y gestión de hojas de cálculo complejas, incluyendo el uso de funciones avanzadas, tablas dinámicas, gráficos, y automatización de procesos. Capacidad para analizar y organizar grandes volúmenes de datos de manera eficiente."
+            "titulo": "Microsoft Office",
+            "habilidades": [
+                {
+                    "nombre": "Excel",
+                    "logo": "/media/img/excel.png",
+                    "descripcion": "Experiencia avanzada en la creación y gestión de hojas de cálculo complejas, incluyendo el uso de funciones avanzadas, tablas dinámicas, gráficos, y automatización de procesos. Capacidad para analizar y organizar grandes volúmenes de datos de manera eficiente."
+                }
+            ]
         }
     ],
     "idiomas": [

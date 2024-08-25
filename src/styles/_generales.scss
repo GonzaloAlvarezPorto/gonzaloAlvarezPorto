@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+.borrarBordeInferior {
+    border-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
 html,body{
     background-color: $negro;
     @include niPaddingNiMargin(0, 0);
@@ -14,6 +19,13 @@ html,body{
 
 .principal{
     @include niPaddingNiMargin(0, 0);
+
+    .principal__cuerpo {
+        background-color: $colorFondoPrincipal;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+    }    
 }
 
 section {

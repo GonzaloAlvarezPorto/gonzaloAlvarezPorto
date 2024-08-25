@@ -1,0 +1,27 @@
+[
+        {
+            "nombreRed":"Facebook",
+            "imagenRed":"./media/img/facebook.png",
+            "enlaceRed":"https://www.facebook.com/gonzalop.jung"
+        },
+        {
+            "nombreRed":"Instagram",
+            "imagenRed":"./media/img/instagram.png",
+            "enlaceRed":"https://www.instagram.com/alvarezportogonzalo/"
+        },
+        {
+            "nombreRed":"Linkedin",
+            "imagenRed":"./media/img/linkedin.png",
+            "enlaceRed":"https://www.linkedin.com/in/gonzalo-alvarez-porto-680611b3/"
+        },
+        {
+            "nombreRed":"Whatsapp",
+            "imagenRed":"./media/img/whatsapp.png",
+            "enlaceRed":"https://wa.me/5491135880974"
+        },
+        {
+            "nombreRed":"G-Mail",
+            "imagenRed":"./media/img/gmail.png",
+            "enlaceRed":"mailto:gonzaalvarezporto@gmail.com"
+        }
+    ]

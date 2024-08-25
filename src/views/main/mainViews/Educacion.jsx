@@ -1,10 +1,14 @@
 import React, { useContext, useState } from 'react';
-import habilidades from '../../../data/habilidades.json';
+import educacion from '../../../data/educacion.json';
 import { CartContext } from '../../../context/CartContext';
 
-export const Habilidades = () => {
+export const Educacion = () => {
 
-    const formacion = habilidades.formacion || [];
+    const formacion = educacion.formacion || [];
+
+    const herramientas = educacion.herramientasDeMicrosoftOffice || [];
+
+    const idiomas = educacion.idiomas || []
 
     // Estado para almacenar el curso seleccionado
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
@@ -21,12 +25,12 @@ export const Habilidades = () => {
         setCursoSeleccionado(curso === cursoSeleccionado ? null : curso);
     };
 
-    const { mensaje, onMouseEnter, onMouseLeave, onMouseEnterCoderHouse } = useContext(CartContext);
+    const { mensaje, onMouseEnter, onMouseEnterCoderHouse, onMouseEnPagina } = useContext(CartContext);
 
     return (
-        <main>
-            <div className="principal__cuerpoHabilidades">
-                <div className="cuerpoHabilidades__formacionProfesional">
+        <>
+            <div className="cuerpo__formacionProfesional">
+                <div className='formacionProfesional__contenedor'>
                     <p className='formacionProfesional__encabezado'>
                         Formación Académica:
                     </p>
@@ -42,8 +46,8 @@ export const Habilidades = () => {
                                         <p className='institucion__ubicacion'>{item.ubicacion}<img className='institucion__ubicacionBandera' src={item.bandera} alt={`${item.ubicacion} bandera`} /></p>
                                         <p className='institucion__periodo'>{item.periodo}</p>
                                     </div>
-                                    <div className='formacionProfesional__habilidades'>
-                                        <div className='habilidades__temas'>
+                                    <div className='formacionProfesional__educacion'>
+                                        <div className='educacion__temas'>
                                             {Array.isArray(item.temas) ? (
                                                 <div className='temas__contenedor'>
                                                     <ul className='temas__titulos'>
@@ -55,7 +59,7 @@ export const Habilidades = () => {
                                                     </ul>
                                                 </div>
                                             ) : (
-                                                <div className='temas__contenedor' onMouseEnter={onMouseEnterCoderHouse} onMouseLeave={onMouseLeave}>
+                                                <div className='temas__contenedor' onMouseEnter={onMouseEnterCoderHouse} onMouseLeave={onMouseEnPagina}>
                                                     <div className='cursos__grupo'>
                                                         {cursoSeleccionado ? (
                                                             Object.entries(item.temas).map(([curso, temas], idx) => (
@@ -100,9 +104,57 @@ export const Habilidades = () => {
                         )}
                     </div>
                 </div>
-            </div>
-        </main>
+                <div className="formacionProfesional__contenedor">
+                    <p className='formacionProfesional__encabezado'>
+                        Habilidades:
+                    </p>
+                    <div className='formacionProfesional__habilidades'>
+                        {herramientas.map((herramienta, index) => (
+                            <div className='habilidades__item' key={index}>
+                                {herramienta.habilidades.map((habilidad, idx) => (
+                                    <div key={idx} className="item__contenedor">
+                                        <p className='item__titulo'>{habilidad.nombre}</p>
+                                        <img className='item__logo' src={habilidad.logo} alt={habilidad.nombre} />
+                                        <p className='item__descripcion'>{habilidad.descripcion}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="formacionProfesional__contenedor">
+                    <p className='formacionProfesional__encabezado'>
+                        Idiomas:
+                    </p>
+                    <div className='formacionProfesional__habilidades'>
+                        {idiomas.map((idioma, index) => (
+                            <div className='habilidades__item' key={index}>
+                                {idiomas.map((idioma, idx) => (
+                                    <div key={idx} className="item__contenedor">
+                                        <p className='item__titulo'>{idioma.idioma}</p>
+                                        <div className='contenedor__nivel'>
+                                            <p className='item__nivel'>Nivel Oral: </p>
+                                            <div className='contenedor__item__nivelAvanzado'>
+                                                <div className='item__nivelAvanzado'></div>
+                                            </div>
+                                            <p>{idioma.nivelOral}</p>
+                                        </div>
+                                        <div className='contenedor__nivel '>
+                                            <p className='item__nivel'>Nivel Oral:</p>
+                                            <div className='contenedor__item__nivelAvanzado'>
+                                                <div className='item__nivelAvanzado'></div>
+                                            </div>
+                                                <p>{idioma.nivelEscrito}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div >
+        </>
     );
 };
 
-export default Habilidades;
+export default Educacion;

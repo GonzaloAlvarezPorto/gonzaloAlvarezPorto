@@ -1,41 +1,26 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext';
+import data from '../../data/redes.json'
 
 export const Footer = () => {
 
-    const { mensaje, onMouseEnter, onMouseLeave } = useContext(CartContext);
+    const { onMouseEnter, onMouseLeave, onMouseEnFooter } = useContext(CartContext);
 
+    const redes = data;
 
     return (
         <footer>
-            <div className="pieDePagina">
+            <div className="pieDePagina" onMouseEnter={onMouseEnFooter}>
                 <div className="pieDePagina__redes">
                     <div className="redes__contenedores">
-                        <a className="contenedores__enlace" href="https://www.facebook.com/gonzalop.jung" target="_blank" title="fb">
-                            <img className="enlace__imagen facebook" onMouseEnter={() => onMouseEnter('Hablar con Gonzalo por')} onMouseLeave={onMouseLeave} src="./media/img/facebook.png" alt="fb" title="Facebook" />
-                        </a>
-                    </div>
-                    <div className="redes__contenedores">
-                        <a className="contenedores__enlace" href="https://www.instagram.com/alvarezportogonzalo/" target="_blank" title="ig">
-                            <img className="enlace__imagen instagram" src="./media/img/instagram.png" alt="ig" title="Instagram" />
-                        </a>
-                    </div>
-                    <div className="redes__contenedores">
-                        <a className="contenedores__enlace" href="https://www.linkedin.com/in/gonzalo-alvarez-porto-680611b3/"
-                            target="_blank" title="lnk">
-                            <img className="enlace__imagen linkedin" src="./media/img/linkedin.png" alt="lnk" title="Linkedin" />
-                        </a>
-                    </div>
-                    <div className="redes__contenedores">
-                        <a className="contenedores__enlace" href="https://wa.me/5491135880974" target="_blank" title="wp">
-                            <img className="enlace__imagen whatsapp" src="./media/img/whatsapp.png" alt="wp" title="Whatsapp" />
-                        </a>
-                    </div>
-                    <div className="redes__contenedores">
-                        <a className="contenedores__enlace" href="mailto:gonzaalvarezporto@gmail.com" target="_blank"
-                            title="gmail">
-                            <img className="enlace__imagen gmail" src="./media/img/gmail.png" alt="gmail" title="G-Mail" />
-                        </a>
+                        {redes.length > 0 ? (
+                            redes.map((red, index) => (
+                                <a className="contenedores__enlace" href={red.enlaceRed} target="_blank" title={red.nombreRed}>
+                                    <img className={`enlace__imagen ${red.nombreRed.toLocaleLowerCase()}`} onMouseEnter={() => onMouseEnter('Hablar con Gonzalo por ' + red.nombreRed)} onMouseLeave={onMouseEnFooter} src={red.imagenRed} alt={red.nombreRed} title={red.nombreRed} />
+                                </a>
+                            ))) : (
+                            <p>No tengo redes</p>
+                            )}
                     </div>
                 </div>
                 <p className="pieDePagina__derechos">

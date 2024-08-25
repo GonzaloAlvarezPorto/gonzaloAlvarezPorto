@@ -10,8 +10,6 @@
     font-style: normal;
 }
 
-
-
 @import "_variables";
 @import "_mixins";
 @import "_generales";
@@ -19,12 +17,10 @@
 
 @import "_cabecera";
 @import "_cabecera__mediaQuery";
+@import "_principalMain";
 @import "_principalPerfil";
 @import "_principalPerfil__mediaQuery";
 @import "_principalProyectos";
-@import "_principalProyectos__mediaQuery";
-@import "_principalHabilidades";
-@import "_principalHabilidades__mediaQuery";
+@import "_principalEducacion";
 @import "_principalServicios";
-@import "_principalServicios__mediaQuery";
 @import "_pieDePagina";

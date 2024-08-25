@@ -6,7 +6,7 @@ import { Index } from './views/main/Index';
 
 function App() {
   return (
-    <>
+    
       <CartProvider>
         <BrowserRouter>
           <Routes>
@@ -15,7 +15,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </CartProvider>
-    </>
+    
   )
 }
 
