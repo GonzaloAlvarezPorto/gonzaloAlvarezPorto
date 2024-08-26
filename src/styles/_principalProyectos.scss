@@ -1,22 +1,20 @@
 .principal__proyectos {
     background-color: $colorFondoPrincipal;
-    padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
     color: rgb(201, 201, 201);
     align-items: center;
     justify-content: center;
-    width: 10px;
-
+    
     .proyectos__general {
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         border-radius: 2px;
         background-color: $colorFondoSeccion;
-        border-left: 2px solid bordeIzquierdoOSuperior;
+        border-left: 2px solid $bordeIzquierdoOSuperior;
         border-right: 2px solid $bordeDerechoOInferior;
-        border-top: 2px solid bordeIzquierdoOSuperior;
+        border-top: 2px solid $bordeIzquierdoOSuperior;
         border-bottom: 2px solid $bordeDerechoOInferior;
         margin: 1rem;
         padding-bottom: 1rem;
@@ -25,27 +23,14 @@
             justify-content: space-around;
             display: flex;
             flex-direction: row;
-            border-radius: 2px;
-            border-left: 2px solid $bordeIzquierdoOSuperior;
-            border-right: 2px solid $bordeDerechoOInferior;
-            border-top: 2px solid $bordeIzquierdoOSuperior;
-            border-bottom: 2px solid $bordeDerechoOInferior;
             padding: 1rem;
             align-items: center;
             margin: 1rem 1rem 0 1rem;
-
-            &:hover {
-                background-color: $colorFondoSeccion;
-                transition: 2s;
-                border-color: $titulos;
-            }
 
             .contenedor__tituloProyecto {
                 color: white;
                 width: 35%;
                 padding: 0 1rem;
-                font-family: Montserrat;
-                text-shadow: 1px 1px 10px $negro;
             }
 
             .contenedor__descripcionProyecto {
@@ -63,19 +48,7 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-                background-color: $colorFondoSeccion;
-                border-radius: 2px;
-                border-left: 2px solid $bordeIzquierdoOSuperior;
-                border-right: 2px solid $bordeDerechoOInferior;
-                border-top: 2px solid $bordeIzquierdoOSuperior;
-                border-bottom: 2px solid $bordeDerechoOInferior;
-
-                &:hover {
-                    background-color: $colorFondoSeccion;
-                    transition: 2s;
-                    border-color: $titulos;
-                }
-
+                
                 .contenedor__logoDeCadaProyecto {
                     .imagenesProyecto__logo {
                         .imagenesProyecto__logoImagen {
@@ -86,25 +59,4 @@
             }
         }
     }
-
-    button {
-        width: 5%;
-        height: 40px;
-        font-size: 16px;
-        background-color: $titulos;
-        border-radius: 10px;
-        color: $negro;
-        border: none;
-        cursor: pointer;
-        margin: 15px;
-    }
-
-    #prevBtn {
-        left: 15px;
-    }
-
-    #nextBtn {
-        right: 15px;
-    }
-
 }

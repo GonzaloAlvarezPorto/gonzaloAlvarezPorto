@@ -5,7 +5,7 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
 
     const [mensaje, setMensaje] = useState('');
-
+    
     const onMouseEnter = (nuevoMensaje) => {
         setMensaje(nuevoMensaje);
     };
@@ -15,23 +15,27 @@ export const CartProvider = ({ children }) => {
     };
 
     const onMouseEnterEncabezado = () => {
-        setMensaje('Usar');
+        setMensaje('Mover');
     }
 
     const onMouseEnterCoderHouse = () => {
-        setMensaje('Abrir');
+        setMensaje('Desplegar');
     }
 
     const onMouseEnPagina = () => {
-        setMensaje('Ir a');
+        setMensaje('Ir');
     }
 
     const onMouseEnFooter = () => {
-        setMensaje('Hablar con')
+        setMensaje('Hablar')
+    }
+
+    const empujarBloque = () => {
+        setMensaje('Empujar')
     }
 
     return (
-        <CartContext.Provider value={{ mensaje, onMouseEnFooter, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse, onMouseEnPagina}}>
+        <CartContext.Provider value={{ mensaje, empujarBloque, onMouseEnFooter, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse, onMouseEnPagina}}>
             {children}
         </CartContext.Provider>
     )

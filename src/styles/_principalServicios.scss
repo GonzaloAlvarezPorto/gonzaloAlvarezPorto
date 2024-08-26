@@ -3,13 +3,13 @@
     flex-direction: column;
     background-color: $colorFondoPrincipal;
     padding-bottom: 1rem;
-    width: 10px;
-    
+    border-bottom: 1px solid rgb(72, 72, 72);
+
     .servicios__apartado {
+        color: $blanco;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: start;
         background-color: $colorFondoSeccion;
         margin: 1rem 1rem 0 1rem;
@@ -19,68 +19,58 @@
         border-top: 2px solid $bordeIzquierdoOSuperior;
         border-bottom: 2px solid $bordeDerechoOInferior;
 
-        .apartado__titulo {
-            margin: 0 32px 0 0;
-            padding: 1rem;
-            width: 20%;
-            font-size: 20px;
-            text-align: center;
+        .apartado__cabecera {
+            color: $titulos;
+            padding: 10px 20px; 
+            background-color: $colorFondoSeccion;
+            text-decoration: underline rgb(122, 122, 122);
+            text-underline-offset: 5px;
         }
 
-        .apartado__bloqueDescriptivo {
+        .apartado__descripcion{
+            padding: 10px 20px; 
+            border-top: 0.5px solid rgb(32, 32, 32);
+        }
+
+        .apartado__listadoCabecera {
             display: flex;
-            flex-direction: column;
-            border-radius: 2px;
-            border-left: 2px solid $bordeIzquierdoOSuperior;
-            border-right: 2px solid $bordeDerechoOInferior;
-            border-top: 2px solid $bordeIzquierdoOSuperior;
-            border-bottom: 2px solid $bordeDerechoOInferior;
-            width: 80%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 1rem;
+            padding-bottom: 10px;
 
-            &:hover {
-                border-color: $titulos;
-                transition: 2s;
-            }
-
-            .bloqueDescriptivo__descripcion {
-                padding: 0 1.8rem;
-                margin: 1rem 0 0 0;
-                color: $blanco;
-                font-family: $textoEnElPrincipal;
-                font-size: 12px;
-            }
-
-            .bloqueDescriptivo__listadoCabecera {
+            .listadoCabecera__itemCabecera {
+                width: 100%;
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                padding: 1rem 1rem;
-                margin: 0;
-                justify-content: center;
-
-                .bloqueDescriptivo__itemCabecera {
+                border-radius: 2px;
+                flex-direction: column;
+                justify-content: start;
+                border-left: 2px solid $bordeIzquierdoOSuperior;
+                border-right: 2px solid $bordeDerechoOInferior;
+                border-top: 2px solid $bordeIzquierdoOSuperior;
+                border-bottom: 2px solid $bordeDerechoOInferior;
+                align-items: center;
+                padding: 1rem;
+                
+                .itemCabecera__titulo {
+                    color: $blanco;
                     width: 100%;
-                    display: flex;
-                    padding: 0.8rem;
-                    border-radius: 2px;
-                    border-left: 2px solid $bordeIzquierdoOSuperior;
-                    border-right: 2px solid $bordeDerechoOInferior;
-                    border-top: 2px solid $bordeIzquierdoOSuperior;
-                    border-bottom: 2px solid $bordeDerechoOInferior;
-                    margin: 2px;
+                    background-color: $colorFondoPrincipal;
+                    padding: 10px;
+
+                    &:hover {
+                        border-color: $titulos;
+                    }
+                }
+
+                .itemCabecera__parrafo {
+                    display: none;
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px 20px 0 20px;
                     align-items: center;
-                    font-size: 14px;
-
-                    .itemCabecera__titulo {
-                        font-weight: bold;
-                        color: $negro;
-                        width: 15%;
-                        margin-right: 30px;
-                    }
-
-                    .itemCabecera__parrafo {
-                        width: 85%;
-                    }
+                    justify-content: center;
                 }
             }
         }

@@ -4,18 +4,18 @@ import data from '../../data/redes.json'
 
 export const Footer = () => {
 
-    const { onMouseEnter, onMouseLeave, onMouseEnFooter } = useContext(CartContext);
+    const { onMouseEnter, onMouseLeave, onMouseEnFooter, onMouseEnPagina } = useContext(CartContext);
 
     const redes = data;
 
     return (
         <footer>
-            <div className="pieDePagina" onMouseEnter={onMouseEnFooter}>
-                <div className="pieDePagina__redes">
+            <div className="pieDePagina">
+                <div className="pieDePagina__redes" onMouseEnter={onMouseEnFooter} onMouseLeave={onMouseEnPagina}>
                     <div className="redes__contenedores">
                         {redes.length > 0 ? (
                             redes.map((red, index) => (
-                                <a className="contenedores__enlace" href={red.enlaceRed} target="_blank" title={red.nombreRed}>
+                                <a key={index} className="contenedores__enlace" href={red.enlaceRed} target="_blank" title={red.nombreRed}>
                                     <img className={`enlace__imagen ${red.nombreRed.toLocaleLowerCase()}`} onMouseEnter={() => onMouseEnter('Hablar con Gonzalo por ' + red.nombreRed)} onMouseLeave={onMouseEnFooter} src={red.imagenRed} alt={red.nombreRed} title={red.nombreRed} />
                                 </a>
                             ))) : (

@@ -1,8 +1,9 @@
 .cuerpo__formacionProfesional {
-    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     background-color: $colorFondoPrincipal;
+    border-bottom: 1px solid $bordeIzquierdoOSuperior;
 
     .formacionProfesional__contenedor {
         border-radius: 2px;
@@ -30,15 +31,6 @@
                 border-top: 0.5px solid $colorFondoPrincipal;
                 background-color: $colorFondoSeccion;
                 padding: 0 20px;
-
-                &:hover {
-                    background-color: $sombrasLetrasOSubrayado;
-
-                    .formacionProfesional__institucionData,
-                    .formacionProfesional__institucionPais {
-                        border-bottom: 1px solid $colorFondoPrincipal;
-                    }
-                }
 
                 .formacionProfesional__institucionData,
                 .formacionProfesional__institucionPais {
@@ -84,7 +76,7 @@
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
-                            align-items: start;
+                            align-items: center;
                             justify-content: space-between;
                             width: 100%;
                             padding: 10px 0;
@@ -118,7 +110,7 @@
                                     justify-content: center;
                                     padding: 8px 0;
                                     width: 50%;
-                                    height: 60px;
+                                    height: 80px;
                                     text-align: center;
                                     border-left: 2px solid $bordeIzquierdoOSuperior;
                                     border-right: 2px solid $bordeDerechoOInferior;
@@ -137,9 +129,9 @@
                                 flex-direction: row;
                                 flex-wrap: wrap;
                                 width: 50%;
-                                min-height: 100px;
-                                justify-content: flex-start;
-                                align-items: start;
+                                min-height: 140px;
+                                justify-content: center;
+                                align-items: center;
 
                                 .grupo__mensaje {
                                     display: flex;
@@ -157,7 +149,7 @@
 
                                     .temas__herramientas {
                                         display: flex;
-                                        justify-content: flex-start;
+                                        justify-content: center;
                                         align-items: center;
                                         flex-direction: row;
                                         flex-wrap: wrap;
@@ -210,7 +202,7 @@
                     }
 
                     .item__logo {
-                        width: 60px;
+                        width: 50px;
                         margin-right: 3rem;
                     }
 

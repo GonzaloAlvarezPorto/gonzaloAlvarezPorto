@@ -30,7 +30,7 @@ export const Educacion = () => {
     return (
         <>
             <div className="cuerpo__formacionProfesional">
-                <div className='formacionProfesional__contenedor'>
+                <div className='formacionProfesional__contenedor' onMouseEnter={onMouseEnterCoderHouse} onMouseLeave={onMouseEnPagina}>
                     <p className='formacionProfesional__encabezado'>
                         Formación Académica:
                     </p>
@@ -59,7 +59,7 @@ export const Educacion = () => {
                                                     </ul>
                                                 </div>
                                             ) : (
-                                                <div className='temas__contenedor' onMouseEnter={onMouseEnterCoderHouse} onMouseLeave={onMouseEnPagina}>
+                                                <div className='temas__contenedor contenedorCoderHouse' >
                                                     <div className='cursos__grupo'>
                                                         {cursoSeleccionado ? (
                                                             Object.entries(item.temas).map(([curso, temas], idx) => (
@@ -86,7 +86,7 @@ export const Educacion = () => {
                                                                 className={`curso__nombre ${cursoSeleccionado === curso ? 'active' : ''}`}
                                                                 key={idx}
                                                                 onClick={() => handleCursoClick(curso)}
-                                                                onMouseEnter={() => onMouseEnter(`Abrir ${curso}`)}
+                                                                onMouseEnter={() => onMouseEnter(`Desplegar ${curso}`)}
                                                                 onMouseLeave={onMouseEnterCoderHouse}
                                                             >
                                                                 {curso}
@@ -122,7 +122,7 @@ export const Educacion = () => {
                         ))}
                     </div>
                 </div>
-                <div className="formacionProfesional__contenedor">
+                <div className="borrarBordeInferiorEducacion formacionProfesional__contenedor">
                     <p className='formacionProfesional__encabezado'>
                         Idiomas:
                     </p>

@@ -1,4 +1,6 @@
 .pieDePagina {
+    border-top: 1px solid $bordeIzquierdoOSuperior;
+    
     .pieDePagina__redes {
         display: flex;
         justify-content: center;
@@ -73,15 +75,11 @@
     }
 
     .pieDePagina__derechos {
-        background-color: black;
+        background-color: $negro;
         margin: 0;
         color: $derechos;
         text-align: center;
         padding: 0.7rem;
-
-        &:hover {
-            color: $titulos;
-            transition: 1s;
-        }
+        border-top: 1px solid $bordeIzquierdoOSuperior;
     }
 }

@@ -11,7 +11,7 @@ export const Menu = () => {
     const handleOpen = () => setIsVisible(true);
     const handleClose = () => setIsVisible(false);
 
-    const { mensaje, onMouseEnter, onMouseLeave, onMouseEnterEncabezado } = useContext(CartContext);
+    const { onMouseEnter, onMouseEnterEncabezado } = useContext(CartContext);
 
     // Manejar clics fuera del menú para cerrarlo
     useEffect(() => {
@@ -54,23 +54,23 @@ export const Menu = () => {
                             GAME OVER
                         </p>
                     </button>
-                    <li className="listado__items" onMouseEnter={() => onMouseEnter('Usar perfil')} onMouseLeave={onMouseEnterEncabezado}>
+                    <li className="listado__items" onMouseEnter={() => onMouseEnter('Mover a perfil')} onMouseLeave={onMouseEnterEncabezado}>
                         <a href="#perfil" className="items__enlace" to="/index">
                             PERFIL
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#educacion" className="items__enlace" to="/educacion" title="educacion" onMouseEnter={() => onMouseEnter('Usar educación')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#educacion" className="items__enlace" to="/educacion" title="educacion" onMouseEnter={() => onMouseEnter('Mover a educación')} onMouseLeave={onMouseEnterEncabezado}>
                             EDUCACIÓN
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#servicios" className="items__enlace" to="/servicios" title="servicios" onMouseEnter={() => onMouseEnter('Usar servicios ofrecidos')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#servicios" className="items__enlace" to="/servicios" title="servicios" onMouseEnter={() => onMouseEnter('Mover a servicios ofrecidos')} onMouseLeave={onMouseEnterEncabezado}>
                             SERVICIOS
                         </a>
                     </li>
                     <li className="listado__items">
-                        <a href="#proyectos" className="items__enlace" to="/proyectos" title="proyectos" onMouseEnter={() => onMouseEnter('Usar proyectos')} onMouseLeave={onMouseEnterEncabezado}>
+                        <a href="#proyectos" className="items__enlace" to="/proyectos" title="proyectos" onMouseEnter={() => onMouseEnter('Mover a proyectos')} onMouseLeave={onMouseEnterEncabezado}>
                             PROYECTOS
                         </a>
                     </li>
