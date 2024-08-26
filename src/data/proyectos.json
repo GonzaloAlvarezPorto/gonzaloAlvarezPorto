@@ -1,0 +1,30 @@
+[
+    {
+        "nombreProyecto":"Vinoteca Roberto",
+        "tipoDeProyecto":"Página web estática",
+        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de Desarrollo Web",
+        "URLProyecto":"https://gonzaloalvarezporto.github.io/vr_vinos/",
+        "logoProyecto":"./media/img/vrVinos.png"
+    },
+    {
+        "nombreProyecto":"Pizzería Don Rémolo",
+        "tipoDeProyecto":"Página web estática",
+        "descripcionProyecto":"Esta página fue desarrollada como parte de una práctica de ID for Ideas.",
+        "URLProyecto":"https://gonzaloalvarezporto.github.io/pizzeriaDonRemolo/",
+        "logoProyecto":"./media/img/donRemolo.png"
+    },
+    {
+        "nombreProyecto":"Almacén Paykuna",
+        "tipoDeProyecto":"Página web estática con carrito eCommerce",
+        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de JavaScript",
+        "URLProyecto":"https://gonzaloalvarezporto.github.io/paykunaTienda/",
+        "logoProyecto":"./media/img/paykuna.png"
+    },
+    {
+        "nombreProyecto":"Vinoteca Alvarez Rapetti",
+        "tipoDeProyecto":"Página Web con carrito eCommerce + dataBase Firebase",
+        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de React JS",
+        "URLProyecto":"https://vinotecaalvarezrapetti.vercel.app/",
+        "logoProyecto":"./media/img/alvarezRapetti.png"
+    }
+]

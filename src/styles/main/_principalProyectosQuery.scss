@@ -6,10 +6,25 @@
 
 @media (max-width:500px) {
     .principal__proyectos {
+        .botonIzquierdo {
+            left: 1.5rem;
+            position: absolute;
+            transform: translateY(130%);
+        }
+        
+        .botonDerecho {
+            right: 1.5rem;
+            position: absolute;
+            transform: translateY(130%);
+        }
+        
         .proyectos__contenedor {
             flex-direction: column;
             padding: 0;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .contenedor__descripcionProyecto {
                 width: 100%;
@@ -17,12 +32,18 @@
                 border-right: none;
                 border-top: 1px solid $negro;
                 border-bottom: 1px solid $negro;
-                padding: 1rem 0;
+                margin: 0 1.5rem;
             }
 
             .contenedor__tituloProyecto {
                 width: 100%;
                 margin: 1rem 0;
+                text-align: center;
+                align-self: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 35px;
             }
 
             .contenedor__imagenesProyecto {

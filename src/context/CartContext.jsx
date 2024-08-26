@@ -34,8 +34,12 @@ export const CartProvider = ({ children }) => {
         setMensaje('Empujar')
     }
 
+    const abrirProyecto = () => {
+        setMensaje('Abrir')
+    }
+
     return (
-        <CartContext.Provider value={{ mensaje, empujarBloque, onMouseEnFooter, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse, onMouseEnPagina}}>
+        <CartContext.Provider value={{ mensaje, abrirProyecto, empujarBloque, onMouseEnFooter, onMouseEnter, onMouseLeave, onMouseEnterEncabezado, onMouseEnterCoderHouse, onMouseEnPagina}}>
             {children}
         </CartContext.Provider>
     )
