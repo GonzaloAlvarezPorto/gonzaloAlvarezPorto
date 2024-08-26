@@ -60,6 +60,20 @@ export const Educacion = () => {
                                                 </div>
                                             ) : (
                                                 <div className='temas__contenedor contenedorCoderHouse' >
+
+                                                    <div className='cursos__nombres'>
+                                                        {Object.keys(item.temas).map((curso, idx) => (
+                                                            <button
+                                                                className={`curso__nombre ${cursoSeleccionado === curso ? 'active' : ''}`}
+                                                                key={idx}
+                                                                onClick={() => handleCursoClick(curso)}
+                                                                onMouseEnter={() => onMouseEnter(`Desplegar ${curso}`)}
+                                                                onMouseLeave={onMouseEnterCoderHouse}
+                                                            >
+                                                                {curso}
+                                                            </button>
+                                                        ))}
+                                                    </div>
                                                     <div className='cursos__grupo'>
                                                         {cursoSeleccionado ? (
                                                             Object.entries(item.temas).map(([curso, temas], idx) => (
@@ -79,19 +93,6 @@ export const Educacion = () => {
                                                         ) : (
                                                             <p className='grupo__mensaje'>Elige una de las opciones</p>
                                                         )}
-                                                    </div>
-                                                    <div className='cursos__nombres'>
-                                                        {Object.keys(item.temas).map((curso, idx) => (
-                                                            <button
-                                                                className={`curso__nombre ${cursoSeleccionado === curso ? 'active' : ''}`}
-                                                                key={idx}
-                                                                onClick={() => handleCursoClick(curso)}
-                                                                onMouseEnter={() => onMouseEnter(`Desplegar ${curso}`)}
-                                                                onMouseLeave={onMouseEnterCoderHouse}
-                                                            >
-                                                                {curso}
-                                                            </button>
-                                                        ))}
                                                     </div>
                                                 </div>
                                             )}
@@ -139,12 +140,12 @@ export const Educacion = () => {
                                             </div>
                                             <p>{idioma.nivelOral}</p>
                                         </div>
-                                        <div className='contenedor__nivel '>
+                                        <div className='contenedor__nivel borrarBordeInferior'>
                                             <p className='item__nivel'>Nivel Oral:</p>
                                             <div className='contenedor__item__nivelAvanzado'>
                                                 <div className='item__nivelAvanzado'></div>
                                             </div>
-                                                <p>{idioma.nivelEscrito}</p>
+                                            <p>{idioma.nivelEscrito}</p>
                                         </div>
                                     </div>
                                 ))}

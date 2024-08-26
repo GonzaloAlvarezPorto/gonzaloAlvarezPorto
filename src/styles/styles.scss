@@ -1,26 +1,34 @@
-@font-face {
-    font-family: 'Monkey Island SCUMM';
-    src: url('/assets/ONESIZE_.TTF') format('truetype');
-}
+//plantillas generales
+@import "./noViews/fuentes";
+@import "./noViews/variables";
+@import "./noViews/_mixins";
+@import "./noViews/_generales";
+@import "./noViews/_keyframes";
 
-@font-face {
-    font-family: 'Chicago';
-    src: url('/assets/ChicagoFLF.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+//header
+@import "./header/_cabecera";
+@import "./header/_cabecera__mediaQuery";
 
-@import "_variables";
-@import "_mixins";
-@import "_generales";
-@import "_keyframes";
+//main
+//logoInicio
+@import "./main/_principalMain";
+@import "./main/_principalMainQuery";
 
-@import "_cabecera";
-@import "_cabecera__mediaQuery";
-@import "_principalMain";
-@import "_principalPerfil";
-@import "_principalPerfil__mediaQuery";
-@import "_principalProyectos";
-@import "_principalEducacion";
-@import "_principalServicios";
-@import "_pieDePagina";
+//sobreMi
+@import "./main/_principalPerfil";
+@import "./main/_principalPerfilQuery";
+
+//Educacion
+@import "./main/_principalEducacion";
+@import "./main/_principalEducacionQuery";
+
+//Servicios
+@import "./main/_principalServicios";
+@import "./main/_principalServiciosQuery";
+
+//Proyectos
+@import "./main/_principalProyectos";
+@import "./main/_principalProyectosQuery";
+
+//footer
+@import "./footer/_pieDePagina";

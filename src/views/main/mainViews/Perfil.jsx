@@ -20,11 +20,11 @@ export const Perfil = () => {
                     <p className='nombre__respuesta'>Avellaneda, Buenos Aires, Argentina</p>
                 </div>
             </div>
-            <div className='texto__infoPersonal borradBordeInferior'>
+            <div className='texto__infoPersonal borrarBordeInferior'>
                 <p className="infoPersonal__parrafo sinPaddingSuperior">
                     Con más de 10 años de experiencia en el área administrativa, he trabajado intensamente en ventas y logística, desarrollando soluciones efectivas para agilizar y optimizar procesos. En mi rol más reciente, diseñé una solución personalizada que mejoró significativamente la gestión administrativa, acelerando procesos y organizando la información de manera eficiente, sin necesidad de un sistema de gestión especializado.
                 </p>
-                <p className="borrarBordeInferior infoPersonal__parrafo">
+                <p className="borrarBordeInferiorYPadding infoPersonal__parrafo">
                     Paralelamente, he ampliado mis conocimientos en desarrollo web, lo que me ha permitido combinar mi experiencia en administración con habilidades técnicas avanzadas. Esta formación me ha dotado de una visión integral sobre cómo la tecnología puede transformar y enriquecer los procesos administrativos, ofreciendo soluciones digitales innovadoras que mejoran la eficiencia y adaptabilidad de las operaciones.
                 </p>
             </div>

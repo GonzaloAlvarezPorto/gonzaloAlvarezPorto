@@ -1,0 +1,110 @@
+@media (max-width:800px) {
+    .cuerpo__formacionProfesional {
+        font-size: 11px;
+
+        .formacionProfesional__contenedor {
+            .formacionProfesional__cursos {
+                .formacionProfesional__item {
+                    .formacionProfesional__educacion {
+                        .educacion__temas {
+                            .temas__contenedor {
+                                .cursos__nombres {
+                                    flex-direction: column;
+                                    
+                                    .curso__nombre {
+                                        font-size: 11px;
+                                        width: 100%;
+                                    }
+                                }
+
+                                .cursos__grupo {
+
+                                    .temas__grupo {
+                                        .temas__herramientas {
+                                            margin: 0;
+
+                                            .herramientas__nombre {
+                                                padding: 10px;
+
+                                                .herramientas__imagen {
+                                                    height: 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .cuerpo__formacionProfesional {
+        .formacionProfesional__contenedor {
+            .formacionProfesional__cursos {
+                .formacionProfesional__item {
+                    .formacionProfesional__educacion {
+                        .educacion__temas {
+                            .temas__contenedor {
+                                flex-direction: column;
+
+                                .cursos__nombres {
+                                    flex-direction: row;
+                                    width: 100%;
+                                    flex-wrap: wrap;
+
+                                    .curso__nombre {
+                                        font-size: 11px;
+                                        width: 50%;
+                                        height: 60px;
+                                    }
+                                }
+
+                                .cursos__grupo {
+                                    width: 100%;
+
+                                    .temas__grupo {
+                                        .temas__herramientas {
+                                            .herramientas__nombre {
+                                                .herramientas__imagen {
+                                                    height: 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .formacionProfesional__habilidades {
+                .habilidades__item {
+                    .item__contenedor {
+                        flex-direction: column;
+
+                        .contenedor__nivel{
+                            margin: 0 0 10px 0;
+                        }
+                        .item__titulo{
+                            margin: 0 0 1rem 0;
+                        }
+
+                        .item__logo{
+                            margin: 0 0 1rem 0;
+                        }
+
+                        .item__descripcion{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

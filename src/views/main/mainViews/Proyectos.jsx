@@ -4,24 +4,23 @@ export const Proyectos = () => {
   return (
     <>
       <div className="principal__proyectos">
-        <div className="proyectos__general">
-          <div className="proyectos__contenedor">
-            <div className="contenedor__tituloProyecto">
-              Página web estática de Vinoteca Roberto.
-            </div>
-            <div className="contenedor__descripcionProyecto">
-              Página de prueba. Esta página fue desarrollada como proyecto final de carrera.
-            </div>
-            <div className="contenedor__imagenesProyecto">
-              <div className="contenedor__logoDeCadaProyecto">
-                <a className="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/vr_vinos/"
-                  target="_blank" title="vrvinos">
-                  <img className="imagenesProyecto__logoImagen" src="/media/img/logo2.png" alt="" />
-                </a>
-              </div>
+        <div className="proyectos__contenedor">
+          <div className="contenedor__tituloProyecto">
+            Página web estática de Vinoteca Roberto.
+          </div>
+          <div className="contenedor__descripcionProyecto">
+            Página de prueba. Esta página fue desarrollada como proyecto final de carrera.
+          </div>
+          <div className="contenedor__imagenesProyecto">
+            <div className="contenedor__logoDeCadaProyecto">
+              <a className="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/vr_vinos/"
+                target="_blank" title="vrvinos">
+                <img className="imagenesProyecto__logoImagen" src="/media/img/logo2.png" alt="" />
+              </a>
             </div>
           </div>
-          <div className="proyectos__contenedor">
+
+          {/* <div className="proyectos__contenedor">
             <div className="contenedor__tituloProyecto">
               Página web estática de Pizzería Don Rémolo.
             </div>
@@ -56,7 +55,7 @@ export const Proyectos = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

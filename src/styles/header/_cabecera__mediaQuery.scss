@@ -6,10 +6,10 @@
             .encabezado__abrir {
                 display: block;
                 border: none;
-                background-color: black;
+                background-color: $negro;
 
                 .abrir__imagen {
-                    color: white;
+                    color: $blanco;
                     text-shadow: 1px 1px 1px $sombrasLetrasOSubrayado;
                     align-self: center;
                     margin-right: 1rem;
@@ -31,7 +31,7 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: black;
+                background-color: $negro;
                 margin-top: 0;
                 box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
                 opacity: 0;
@@ -45,11 +45,11 @@
                     .listado__cerrar {
                         display: block;
                         border: none;
-                        background-color: black;
+                        background-color: $negro;
                         height: 60px;
 
                         .cerrar__imagen {
-                            color: white;
+                            color: $blanco;
                             text-shadow: 1px 1px 1px $sombrasLetrasOSubrayado;
                             height: 40px;
                             border-radius: 2px;
@@ -82,8 +82,14 @@
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:800px) {
     .encabezado__mensaje {
-        width: 150px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:450px) {
+    .encabezado__mensaje {
+        width: 120px;
     }
 }
