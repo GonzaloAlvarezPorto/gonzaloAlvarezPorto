@@ -134,14 +134,14 @@ export const Educacion = () => {
                                     <div key={idx} className="item__contenedor">
                                         <p className='item__titulo'>{idioma.idioma}</p>
                                         <div className='contenedor__nivel'>
-                                            <p className='item__nivel'>Nivel Oral: </p>
+                                            <p className='item__nivel'>Nivel Conversacional: </p>
                                             <div className='contenedor__item__nivelAvanzado'>
                                                 <div className='item__nivelAvanzado'></div>
                                             </div>
                                             <p>{idioma.nivelOral}</p>
                                         </div>
                                         <div className='contenedor__nivel borrarBordeInferior'>
-                                            <p className='item__nivel'>Nivel Oral:</p>
+                                            <p className='item__nivel'>Nivel Escrito:</p>
                                             <div className='contenedor__item__nivelAvanzado'>
                                                 <div className='item__nivelAvanzado'></div>
                                             </div>
