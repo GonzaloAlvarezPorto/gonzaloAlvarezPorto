@@ -79,7 +79,6 @@
                             align-items: center;
                             justify-content: space-between;
                             width: 100%;
-                            padding: 10px 0;
 
                             .temas__titulos {
                                 display: flex;
@@ -98,10 +97,9 @@
                                 display: flex;
                                 flex-direction: row;
                                 flex-wrap: wrap;
-                                width: 50%;
                                 justify-content: center;
                                 align-items: center;
-                                min-height: 100px;
+                                width: 100%;
 
                                 .curso__nombre {
                                     color: $blanco;
@@ -109,8 +107,8 @@
                                     align-items: center;
                                     justify-content: center;
                                     padding: 8px;
-                                    width: 50%;
                                     height: 80px;
+                                    width: 25%;
                                     text-align: center;
                                     border-left: 2px solid $bordeIzquierdoOSuperior;
                                     border-right: 2px solid $bordeDerechoOInferior;
@@ -125,11 +123,10 @@
                             }
 
                             .cursos__grupo {
-                                display: flex;
+                                display: none;
                                 flex-direction: row;
                                 flex-wrap: wrap;
-                                width: 50%;
-                                min-height: 140px;
+                                width: 100%;
                                 justify-content: center;
                                 align-items: center;
 
@@ -172,6 +169,10 @@
                                     }
                                 }
                             }
+
+                            .cursos__grupo.visible {
+                                display: flex;
+                            }
                         }
                     }
                 }
@@ -197,8 +198,8 @@
                     align-items: center;
                     padding: 10px 0;
 
-                    .item__titulo{
-                        margin-right: 1rem;    
+                    .item__titulo {
+                        margin-right: 1rem;
                     }
 
                     .item__logo {
@@ -207,14 +208,14 @@
                     }
 
                     .item__descripcion {
-                        padding: 0 20px;  
+                        padding: 0 20px;
                     }
 
                     .contenedor__nivel {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        
+
                         .contenedor__item__nivelAvanzado {
                             background-color: $colorFondoPrincipal;
                             width: 100px;
@@ -230,7 +231,7 @@
                             }
                         }
                     }
-               }
+                }
             }
         }
     }

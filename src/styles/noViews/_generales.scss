@@ -5,18 +5,20 @@
     scroll-behavior: smooth;
 }
 
-.borrarBordeInferiorYPadding {
-    border-bottom: 0px !important;
-    padding-bottom: 0px !important;
+.sinBordeInferior{
+    border-bottom: 0 !important;
 }
 
-.borrarBordeInferiorEducacion {
+.sinPaddingInferior{
+    padding-bottom: 0 !important;
+}
+
+.sinBorde{
+    border:0 !important;
+}
+
+.sinMarginInferior{
     margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-}
-
-.borrarBordeInferior{
-    margin-bottom: 0 !important;
 }
 
 .sinPaddingSuperior {
@@ -24,7 +26,7 @@
 }
 
 .contenedorCoderHouse{
-    min-height: 200px !important;
+    padding: 10px 0;
 }
 
 html,body{

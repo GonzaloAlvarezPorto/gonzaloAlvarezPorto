@@ -3,12 +3,9 @@ import educacion from '../../../data/educacion.json';
 import { CartContext } from '../../../context/CartContext';
 
 export const Educacion = () => {
-
     const formacion = educacion.formacion || [];
-
     const herramientas = educacion.herramientasDeMicrosoftOffice || [];
-
-    const idiomas = educacion.idiomas || []
+    const idiomas = educacion.idiomas || [];
 
     // Estado para almacenar el curso seleccionado
     const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
@@ -29,7 +26,7 @@ export const Educacion = () => {
 
     return (
         <>
-            <div className="cuerpo__formacionProfesional">
+            <div className="cuerpo__formacionProfesional sinPaddingInferior">
                 <div className='formacionProfesional__contenedor' onMouseEnter={onMouseEnterCoderHouse} onMouseLeave={onMouseEnPagina}>
                     <p className='formacionProfesional__encabezado'>
                         Formación Académica:
@@ -59,8 +56,7 @@ export const Educacion = () => {
                                                     </ul>
                                                 </div>
                                             ) : (
-                                                <div className='temas__contenedor contenedorCoderHouse' >
-
+                                                <div className='temas__contenedor contenedorCoderHouse'>
                                                     <div className='cursos__nombres'>
                                                         {Object.keys(item.temas).map((curso, idx) => (
                                                             <button
@@ -74,12 +70,12 @@ export const Educacion = () => {
                                                             </button>
                                                         ))}
                                                     </div>
-                                                    <div className='cursos__grupo'>
+                                                    <div className={`cursos__grupo ${cursoSeleccionado ? 'visible' : 'none'}`}>
                                                         {cursoSeleccionado ? (
                                                             Object.entries(item.temas).map(([curso, temas], idx) => (
                                                                 curso === cursoSeleccionado && (
                                                                     <div className='temas__grupo' key={idx}>
-                                                                        <ul className='temas__herramientas'>
+                                                                        <ul className='temas__herramientas sinMarginInferior'>
                                                                             {temas.map((tema, temaIdx) => (
                                                                                 <li className='herramientas__nombre' key={temaIdx}>
                                                                                     <img className='herramientas__imagen' src={tema.imagen} alt={tema.nombre} />
@@ -123,7 +119,7 @@ export const Educacion = () => {
                         ))}
                     </div>
                 </div>
-                <div className="borrarBordeInferiorEducacion formacionProfesional__contenedor">
+                <div className="formacionProfesional__contenedor">
                     <p className='formacionProfesional__encabezado'>
                         Idiomas:
                     </p>
@@ -140,7 +136,7 @@ export const Educacion = () => {
                                             </div>
                                             <p>{idioma.nivelOral}</p>
                                         </div>
-                                        <div className='contenedor__nivel borrarBordeInferior'>
+                                        <div className='sinBordeInferior sinPaddingInferior contenedor__nivel'>
                                             <p className='item__nivel'>Nivel Escrito:</p>
                                             <div className='contenedor__item__nivelAvanzado'>
                                                 <div className='item__nivelAvanzado'></div>
