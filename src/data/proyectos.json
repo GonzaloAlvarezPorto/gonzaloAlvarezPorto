@@ -3,7 +3,7 @@
         "nombreProyecto":"Vinoteca Roberto",
         "tipoDeProyecto":"Página web estática",
         "descripcionProyecto":"Esta página forma parte del proyecto final de curso de Desarrollo Web",
-        "URLProyecto":"https://gonzaloalvarezporto.github.io/vr_vinos/",
+        "URLProyecto":"https://vinotecaroberto.vercel.app/",
         "logoProyecto":"./media/img/vrVinos.png"
     },
     {
@@ -17,7 +17,7 @@
         "nombreProyecto":"Almacén Paykuna",
         "tipoDeProyecto":"Página web estática con carrito eCommerce",
         "descripcionProyecto":"Esta página forma parte del proyecto final de curso de JavaScript",
-        "URLProyecto":"https://gonzaloalvarezporto.github.io/paykunaTienda/",
+        "URLProyecto":"https://paykunatiendajavascript.vercel.app/",
         "logoProyecto":"./media/img/paykuna.png"
     },
     {
