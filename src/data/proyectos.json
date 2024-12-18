@@ -26,5 +26,12 @@
         "descripcionProyecto":"Esta página forma parte del proyecto final de curso de React JS",
         "URLProyecto":"https://vinotecaalvarezrapetti.vercel.app/",
         "logoProyecto":"./media/img/alvarezRapetti.png"
+    },
+    {
+        "nombreProyecto":"Agenda tus pendientes",
+        "tipoDeProyecto":"Página web estática para organizar las tareas de la semana y agendar tareas pendientes y que queden fijadas",
+        "descripcionProyecto":"Esta página forma parte del desafío latam_",
+        "URLProyecto":"https://agendatuspendientes.vercel.app/",
+        "logoProyecto":"./media/img/tusPendientes.png"
     }
 ]
