@@ -1,13 +1,8 @@
 [
         {
-            "nombreRed":"Facebook",
-            "imagenRed":"./media/img/facebook.png",
-            "enlaceRed":"https://www.facebook.com/gonzalop.jung"
-        },
-        {
             "nombreRed":"Instagram",
             "imagenRed":"./media/img/instagram.png",
-            "enlaceRed":"https://www.instagram.com/alvarezportogonzalo/"
+            "enlaceRed":"https://www.instagram.com/galvarezp.dev/"
         },
         {
             "nombreRed":"Linkedin",
