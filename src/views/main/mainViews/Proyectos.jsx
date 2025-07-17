@@ -27,7 +27,7 @@ export const Proyectos = () => {
       {proyectos.length > 0 ? (
         <div className="proyectos__contenedor">
           <div className="contenedor__tituloProyecto">
-            {proyectos[indiceActivo].tipoDeProyecto}. {proyectos[indiceActivo].nombreProyecto}
+            {proyectos[indiceActivo].tipoDeProyecto}
           </div>
           <div className="contenedor__descripcionProyecto">
             {proyectos[indiceActivo].descripcionProyecto}

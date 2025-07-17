@@ -6,7 +6,7 @@
             "ubicacion": "Argentina",
             "logo": "/media/img/coderHouse.png",
             "bandera": "/media/img/argentina.png",
-            "periodo": "2023-Presente",
+            "periodo": "2023-2025",
             "temas": {
                 "Curso de Desarrollo Web": [
                     {
@@ -62,7 +62,7 @@
                         "imagen": "/media/img/firebase.png"
                     }
                 ],
-                "Curso de Programación Backend (en curso)": [
+                "Curso de Programación Backend": [
                     {
                         "nombre": "Express.js",
                         "imagen": "/media/img/express.png"
@@ -78,6 +78,22 @@
                     {
                         "nombre": "MongoDB",
                         "imagen": "/media/img/mongodb.png"
+                    },
+                    {
+                        "nombre": "Passport.js",
+                        "imagen": "/media/img/passport.png"
+                    },
+                    {
+                        "nombre": "JSON Web Token",
+                        "imagen": "/media/img/jwt.png"
+                    },
+                    {
+                        "nombre": "Docker",
+                        "imagen": "/media/img/docker.png"
+                    },
+                    {
+                        "nombre": "Next.js",
+                        "imagen": "/media/img/nextjs.png"
                     }
                 ]
             }

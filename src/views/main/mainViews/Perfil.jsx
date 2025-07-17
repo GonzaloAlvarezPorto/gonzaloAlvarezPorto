@@ -22,10 +22,22 @@ export const Perfil = () => {
             </div>
             <div className='texto__infoPersonal sinMarginInferior'>
                 <p className="infoPersonal__parrafo sinPaddingSuperior">
-                    Con más de 10 años de experiencia en el área administrativa, he trabajado intensamente en ventas y logística, desarrollando soluciones efectivas para agilizar y optimizar procesos. En mi rol más reciente, diseñé una solución personalizada que mejoró significativamente la gestión administrativa, acelerando procesos y organizando la información de manera eficiente, sin necesidad de un sistema de gestión especializado.
+                    Con más de 10 años de experiencia en administración, especialmente en ventas y logística,
+                    me especialicé en diseñar soluciones que agilizan y ordenan procesos, facilitando la gestión
+                    diaria sin depender de sistemas complejos. Mi enfoque siempre estuvo en hacer más con menos,
+                    simplificando y mejorando la eficiencia.
                 </p>
-                <p className="sinBordeInferior sinPaddingInferior infoPersonal__parrafo">
-                    Paralelamente, he ampliado mis conocimientos en desarrollo web, lo que me ha permitido combinar mi experiencia en administración con habilidades técnicas avanzadas. Esta formación me ha dotado de una visión integral sobre cómo la tecnología puede transformar y enriquecer los procesos administrativos, ofreciendo soluciones digitales innovadoras que mejoran la eficiencia y adaptabilidad de las operaciones.
+                <p className="  infoPersonal__parrafo">
+                    Al mismo tiempo, amplié mi camino profesional hacia el desarrollo web,
+                    aprendiendo tecnologías modernas como React, Next.js y Sass, y trabajando con herramientas como
+                    Firebase y Google Sheets. Esta combinación me permite crear soluciones digitales prácticas y
+                    adaptadas a las necesidades reales de las empresas y emprendedores.
+                </p>
+                <p className="infoPersonal__parrafo sinBordeInferior sinPaddingInferior">
+                    Me apasiona construir herramientas que simplifiquen la gestión,
+                    mejoren la comunicación y ayuden a los negocios a crecer de manera ágil y eficiente.
+                    Creo que la tecnología debe ser una aliada accesible que potencie el trabajo de las personas,
+                    y eso es lo que busco lograr con cada proyecto.
                 </p>
             </div>
         </div>

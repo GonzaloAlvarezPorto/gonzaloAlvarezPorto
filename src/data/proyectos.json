@@ -1,37 +1,23 @@
 [
     {
-        "nombreProyecto":"Vinoteca Roberto",
-        "tipoDeProyecto":"Página web estática",
-        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de Desarrollo Web",
-        "URLProyecto":"https://vinotecaroberto.vercel.app/",
-        "logoProyecto":"./media/img/vrVinos.png"
+        "nombreProyecto": "Almacén Paykuna",
+        "tipoDeProyecto": "Ecommerce con panel administrativo para gestión de productos e interacción con clientes.",
+        "descripcionProyecto": "Desarrollo full stack de aplicación web con React y Next.js 13+, estilado con Sass. Backend integrado con Firebase para autenticación y base de datos en tiempo real.",
+        "URLProyecto": "https://almacenpaykuna.vercel.app/",
+        "logoProyecto": "./media/img/paykuna.png"
     },
     {
-        "nombreProyecto":"Pizzería Don Rémolo",
-        "tipoDeProyecto":"Página web estática",
-        "descripcionProyecto":"Esta página fue desarrollada como parte de una práctica de ID for Ideas.",
-        "URLProyecto":"https://pizzeriadonremolo-nu.vercel.app/",
-        "logoProyecto":"./media/img/donRemolo.png"
+        "nombreProyecto": "Agenda tus pendientes",
+        "tipoDeProyecto": "Gestor de tareas semanal con guardado local. Compartida como herramienta práctica de uso libre.",
+        "descripcionProyecto": "Aplicación en React con Sass que permite organizar tareas semanales. Usa localStorage para conservar los datos entre sesiones.",
+        "URLProyecto": "https://agendatuspendientes.vercel.app/",
+        "logoProyecto": "./media/img/tusPendientes.png"
     },
     {
-        "nombreProyecto":"Almacén Paykuna",
-        "tipoDeProyecto":"Página web estática con carrito eCommerce",
-        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de JavaScript",
-        "URLProyecto":"https://paykunatiendajavascript.vercel.app/",
-        "logoProyecto":"./media/img/paykuna.png"
-    },
-    {
-        "nombreProyecto":"Vinoteca Alvarez Rapetti",
-        "tipoDeProyecto":"Página Web con carrito eCommerce + dataBase Firebase",
-        "descripcionProyecto":"Esta página forma parte del proyecto final de curso de React JS",
-        "URLProyecto":"https://vinotecaalvarezrapetti.vercel.app/",
-        "logoProyecto":"./media/img/alvarezRapetti.png"
-    },
-    {
-        "nombreProyecto":"Agenda tus pendientes",
-        "tipoDeProyecto":"Página web estática para organizar las tareas de la semana y agendar tareas pendientes y que queden fijadas",
-        "descripcionProyecto":"Esta página forma parte del desafío latam_",
-        "URLProyecto":"https://agendatuspendientes.vercel.app/",
-        "logoProyecto":"./media/img/tusPendientes.png"
+        "nombreProyecto": "Mader Della's",
+        "tipoDeProyecto": "Catálogo online de productos con panel administrativo para gestión interna e interacción con clientes.",
+        "descripcionProyecto": "Aplicación full stack desarrollada con Next.js 13+, React y Sass. Utiliza Firebase para autenticación y base de datos, y Cloudinary para gestión de imágenes. Incluye panel de administración para crear, editar y eliminar productos.",
+        "URLProyecto": "https://maderdellas.vercel.app/",
+        "logoProyecto": "./media/img/maderDellas.png"
     }
 ]
