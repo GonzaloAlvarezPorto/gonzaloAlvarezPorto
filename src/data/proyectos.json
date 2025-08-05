@@ -19,5 +19,12 @@
         "descripcionProyecto": "Aplicación full stack desarrollada con Next.js 13+, React y Sass. Utiliza Firebase para autenticación y base de datos, y Cloudinary para gestión de imágenes. Incluye panel de administración para crear, editar y eliminar productos.",
         "URLProyecto": "https://maderdellas.vercel.app/",
         "logoProyecto": "./media/img/maderDellas.png"
+    },
+    {
+        "nombreProyecto": "Agenda tus pendientes 2.0",
+        "tipoDeProyecto": "Gestor de tareas semanal con autenticación y sincronización en la nube.",
+        "descripcionProyecto": "Reversión mejorada de la herramienta anterior, ahora desarrollada en Next.js y estilada con Sass. Utiliza Firebase para autenticación y almacenamiento de datos en tiempo real. Incluye login seguro y persistencia de tareas en la nube. Proyecto versionado y desplegado desde GitHub.",
+        "URLProyecto": "https://agenda-tus-pendientes2-0.vercel.app/",
+        "logoProyecto": "./media/img/tusPendientes.png"
     }
 ]
